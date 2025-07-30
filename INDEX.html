@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>OPTOMA PHOTON GO - 超短焦3雷射投影機</title>
+
+</head>
+<body>
+    <!-- Header 導覽列 -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="https://www.optoma.com.tw/product/photon-go" class="logo">
+                <img src="https://www.optoma.com.tw/assets/img/logo-optoma.svg" alt="OPTOMA Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                <span style="display:none;">OPTOMA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero">首頁</a></li>
+                <li><a href="#hero">立即購買</a></li>
+                <li><a href="#specifications">特色</a></li>
+                <li><a href="#testimonials">客戶分享</a></li>
+                <li><a href="#about">關於我們</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#hero" onclick="closeMobileMenu()">首頁</a>
+            <a href="#hero" onclick="closeMobileMenu()">立即購買</a>
+            <a href="#specifications" onclick="closeMobileMenu()">特色</a>
+             <a href="#testimonials" onclick="closeMobileMenu()">客戶分享</a>
+            <a href="#about" onclick="closeMobileMenu()">關於我們</a>
+        </div>
+    </header>
+
+    <!-- HERO 主視覺區 -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Photon Go-超短焦3雷射投影機</h1>
+                <p class="hero-subtitle">Photon Go 小宇宙 擁有最新的 RGB 三雷射技術，離牆 25公分可投影 100吋影像，具備強大的 1,200 HK 流明亮度與超廣色域，輕巧便攜僅1.72公斤，配備 2個10W 喇叭和杜比音效，配有內置電池，最長 1.5 小時不斷電，內建 Google TV，涵蓋 Youtube、Netflix、Prime Video和Disney+等多種串流服務，100W ( 20V / 5A )行動電源就能充，走到哪充到哪！</p>
+                <div class="cta-buttons">
+                    <a href="https://forms.gle/TfuHmBsVbbK1ejm56" class="cta-button">立即購買</a>
+                    <a href="https://www.optoma.com.tw/product/photon-go" class="cta-button">詳細規格</a>
+                    <a href="https://youtu.be/1JQCCI-BCdw" class="cta-button">網紅推薦</a>
+                </div>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="https://www.optoma.com/wp-content/uploads/2025/07/PhotonGo_Osale_XX.jpg" alt="投影機產品圖 1" onerror="this.parentElement.classList.add('fallback'); this.style.display='none'; this.parentElement.innerHTML='📽️';">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.optoma.com/wp-content/uploads/2025/07/PhotonGo_Osale_YY.jpg" alt="投影機產品圖 2" onerror="this.parentElement.classList.add('fallback'); this.style.display='none'; this.parentElement.innerHTML='🎬';">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.optoma.com/wp-content/uploads/2025/07/PhotonGo_Osale_ZZ.jpg" alt="投影機產品圖 3" onerror="this.parentElement.classList.add('fallback'); this.style.display='none'; this.parentElement.innerHTML='🎞️';">
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <span class="carousel-dot active" data-slide="0"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Body 商品規格卡片區 -->
+    <section id="specifications" class="specifications">
+        <div class="container">
+            <h2 class="section-title">產品特色</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <span class="spec-icon">🎯</span>
+                    <h3 class="spec-title">超短焦</h3>
+                    <p class="spec-description">只需10-25cm，即可擁有百吋大螢幕，還有自動對焦和自動梯形校正</p>
+                </div>
+                <div class="spec-card">
+                    <span class="spec-icon">🪶</span>
+                    <h3 class="spec-title">極輕巧</h3>
+                    <p class="spec-description">1.72kg超輕盈，方便放入包包攜帶出門，隨身娛樂大畫面更輕鬆</p>
+                </div>
+                <div class="spec-card">
+                    <span class="spec-icon">💥</span>
+                    <h3 class="spec-title">大爆發</h3>
+                    <p class="spec-description">三色 RGB雷射技術，BT.2020 色彩準確度，享受高亮度清晰畫面</p>
+                </div>
+                <div class="spec-card">
+                    <span class="spec-icon">📺</span>
+                    <h3 class="spec-title">爽追劇</h3>
+                    <p class="spec-description">搭載Google TV，隨時暢享Netflix、YouTube、Disney+ 和 Amazon Prime Video 等影視串流</p>
+                </div>
+                <div class="spec-card">
+                    <span class="spec-icon">🔋</span>
+                    <h3 class="spec-title">不斷電</h3>
+                    <p class="spec-description">內建電池，可續航1.5H，擺脫插座限制，戶外娛樂不斷電，也可使用行動電源充電</p>
+                </div>
+                <div class="spec-card">
+                    <span class="spec-icon">🔊</span>
+                    <h3 class="spec-title">好聲音</h3>
+                    <p class="spec-description">內建 Dolby Audio 杜比音響，精準呈現重低音、清晰對話與豐富飽滿的音效，無需再外接喇叭</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- 客戶見証區 -->
+<section id="testimonials" class="testimonials">
+    <div class="section">
+        <h2 class="section-title">客戶真實分享</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial">
+                       <div class="testimonial-avatar">A</div>
+                        <h4>Amy Lin</h4>
+                         <div class="role">內容創作者</div>
+                         <p>「Optoma Photon Go 投影機簡直是我的創作神器！畫面色彩飽和、細節清晰，讓我的影片在任何環境都能呈現專業級效果。輕巧好攜帶，移動工作也能隨時擁有大螢幕，效率大大提升！」</p>
+                          </div>       
+
+                    <div class="testimonial">
+                <div class="testimonial-avatar">C</div>
+                <h4>Chris Wang</h4>
+                <div class="role">商務簡報顧問</div>
+                <p>「作為一名需要經常出差簡報的顧問，Photon Go 是我的最佳夥伴。啟動速度快，介面直觀，每次客戶都被它流暢的投影表現驚艷到。小巧的體積更是大大減輕了我的行李負擔！」</p>
+            </div>
+                    
+                    <div class="testimonial">
+                <div class="testimonial-avatar">B</div>
+                <h4>Ben Chen</h4>
+                <div class="role">家庭娛樂愛好者</div>
+                <p>「這台投影機徹底改變了我們的家庭電影之夜！安裝超簡單，亮度足夠即使在客廳開燈也能看清楚。音質也出乎意料的好，現在全家人都搶著用它來追劇、玩遊戲，沉浸感十足！」</p>
+            </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- About Us 區塊 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">關於我們</h2>
+                <p class="about-text">
+                    我們熱衷於創新，致力於提升用戶體驗，因此我們積極利用並垂直整合我們在工程、熱設計、軟體整合和人工智慧方面的核心競爭力
+                    ，並探索新興領域的商業機會。展望未來，奧圖碼將繼續成為業界領導企業，引領新技術，連結社區，賦能大眾，創造更豐富的體驗。
+                </p>
+                <div class="social-links">
+                    <a href="https://www.optoma.com/" class="social-link" target="_blank">官方網站</a>
+                    <a href="https://www.facebook.com/optoma/?locale=zh_TW" class="social-link" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/optoma_tw/" class="social-link" target="_blank">Instagram</a>
+                    <a href="https://optomasupporttw.zendesk.com/hc/zh-tw/articles/12376120160015-%E6%9C%8D%E5%8B%99%E6%99%82%E9%96%93%E8%88%87%E8%81%AF%E7%B5%A1%E6%96%B9%E5%BC%8F" class="social-link">聯絡我們</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
